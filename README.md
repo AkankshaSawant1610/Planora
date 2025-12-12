@@ -1,4 +1,3 @@
-Here’s a fully structured, GitHub-ready README for **PLANORA**, modeled in the same style as your **Mahabharata Darshan** README:
 
 ---
 
@@ -219,6 +218,4 @@ All design, content, and code are © **Akanksha Sawant – All Rights Reserved**
 
 ---
 
-If you want, I can also **add animated badges, GIF demo links, and a fully formatted dual-language section**, just like your Mahabharata Darshan README, to make it more visually appealing for GitHub.
 
-Do you want me to do that next?

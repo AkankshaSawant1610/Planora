@@ -1,57 +1,88 @@
-
-
-# 🎉 PLANORA – Event Management & Booking Web Application
-
-PLANORA is a full-stack **JSP + Servlet + JDBC** powered event management platform that enables users to explore upcoming events, register, log in, book events, and manage their bookings.
-A seamless administrative backend allows event organizers to manage events, users, and bookings efficiently.
-
-Crafted to deliver a **smooth, modern event experience**, PLANORA blends dynamic UI, reliable backend logic, and database-driven workflows.
+Here’s a fully structured, GitHub-ready README for **PLANORA**, modeled in the same style as your **Mahabharata Darshan** README:
 
 ---
 
-## 🚀 Core Features
+# 🎉 **PLANORA – Event Management & Booking Web Application**
 
-### 👤 **User Module**
+### *A Full-Stack JSP + Servlet + JDBC Platform for Seamless Event Management*
 
-* 🔐 User Registration & Login
-* 📅 Browse & View Upcoming Events
-* 📝 Book Events with a single click
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white" />
+  <img src="https://img.shields.io/badge/JSP-FF0000?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/Servlets-6DB33F?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Apache%20Tomcat-F8DC75?style=for-the-badge&logo=apachetomcat&logoColor=black" />
+  <img src="https://img.shields.io/badge/VS_Code-0078D4?style=for-the-badge&logo=visual-studio-code&logoColor=white" />
+</p>
+
+---
+
+# 🌿 **Overview**
+
+**PLANORA** is a **web-based event management platform** that enables users to explore, register, and book upcoming events while providing event organizers a **dynamic backend for efficient management**.
+
+It delivers:
+
+* 📅 Browse & register for upcoming events
+* 📝 Manage personal bookings
+* 👥 Admin panel for event & user management
+* ⚙ Seamless integration of JSP, Servlets, and MySQL for a **dynamic full-stack experience**
+
+---
+
+# ⭐ **Why This Project Matters**
+
+* Simplifies **event discovery and booking**
+* Enables **efficient backend management** for organizers
+* Provides a **modern, responsive, and user-friendly UI**
+* Bridges **frontend and backend workflows** seamlessly
+* Scalable foundation for **future enhancements** like analytics and online payments
+
+---
+
+# 🚀 **Key Features**
+
+## 👤 **User Module**
+
+* 🔐 User registration & login
+* 📅 Browse & view upcoming events
+* 📝 Book events with one click
 * 📄 View & manage *My Bookings*
-* 🚪 Secure Logout Functionality
+* 🚪 Secure logout functionality
 
 ---
 
-### 🛠 **Admin Module**
+## 🛠 **Admin Module**
 
-* 🗂 Create & Manage Events
-* 👥 Manage User Accounts
-* 📊 View & track all Bookings
-* ✏ CRUD operations for event details
+* 🗂 Create, update, and manage events
+* 👥 Manage user accounts
+* 📊 View and track all bookings
+* ✏ CRUD operations for events
 * 🧾 Backend management via JSP/Servlets
 
 ---
 
-### 🎨 **Frontend Experience**
+## 🎨 **Frontend Experience**
 
-* 🌐 JSP-driven dynamic pages
-* 🎴 Event Cards, Banners & Visual Listings
-* 📱 Responsive UI
-* 🎨 Styled using HTML5, CSS3, JavaScript
-* 🔔 User-friendly booking flow
+* 🌐 Dynamic JSP pages
+* 🎴 Event cards, banners & visual listings
+* 📱 Responsive UI design
+* 🎨 Styled with HTML5, CSS3, JavaScript
+* 🔔 Smooth, intuitive booking workflow
 
 ---
 
-### 💾 **Backend & Logic**
+## 💾 **Backend & Logic**
 
 * ⚙ Java Servlets
-* 🔌 JDBC Connectivity
-* 🗄 MySQL Database Integration
-* 📚 DAO-style data flow
+* 🔌 JDBC connectivity
+* 🗄 MySQL database integration
+* 📚 DAO-style architecture
 * 🧱 Deployed on Apache Tomcat
 
 ---
 
-## 📁 Project Structure
+# 🧭 **Project Structure**
 
 ```
 PLANORA/
@@ -86,65 +117,51 @@ PLANORA/
 
 ---
 
-## ⚙️ Tech Stack
+# 🔧 **Technologies & Tools**
 
-### 🔧 Backend
+## 🎨 Frontend
 
-* Java
-* JSP & Servlets
-* JDBC
-* MySQL
+* JSP, HTML5, CSS3, JavaScript
 
-### 🎨 Frontend
+## ⚙ Backend
 
-* JSP
-* HTML5
-* CSS3
-* JavaScript
+* Java, JSP, Servlets, JDBC, MySQL
 
-### 🌍 Server
+## 🌍 Server
 
 * Apache Tomcat (8 / 9 / 10)
 
-### 🗄 Database
+## 🗄 Database
 
 * MySQL
-* JDBC Driver (included in `WEB-INF/lib`)
 
 ---
 
-## 🔧 How to Run the Project
+# ▶️ **How to Run**
 
-### **1️⃣ Import the Project**
+### 1️⃣ Import Project
 
 * Open **Eclipse** or **IntelliJ**
-* Import as *Existing Dynamic Web Project* or *Maven Project* (if converted)
+* Import as *Existing Dynamic Web Project*
 
----
+### 2️⃣ Configure Server
 
-### **2️⃣ Configure the Server**
+* Add **Apache Tomcat** (version 8–10 recommended)
 
-* Add **Apache Tomcat** (8–10 recommended)
+### 3️⃣ Configure Database
 
----
-
-### **3️⃣ Configure the Database**
-
-Run in MySQL:
+Run the following in MySQL:
 
 ```sql
 CREATE DATABASE event_portal;
 USE event_portal;
 ```
 
-Add the required tables:
-(If you want, I’ll generate full SQL schema for you.)
+*(Tables can be created as per DAO/SQL scripts)*
 
----
+### 4️⃣ Update DB Credentials
 
-### **4️⃣ Update DB Credentials**
-
-Inside your DAO/Servlet files:
+In your DAO/Servlet files:
 
 ```java
 url = "jdbc:mysql://localhost:3306/event_portal";
@@ -152,12 +169,10 @@ username = "root";
 password = "your_password";
 ```
 
----
-
-### **5️⃣ Run the Application**
+### 5️⃣ Run the Application
 
 * Start Tomcat
-* Open your browser:
+* Open browser:
 
 ```
 http://localhost:8080/PLANORA/
@@ -165,32 +180,45 @@ http://localhost:8080/PLANORA/
 
 ---
 
-## 📸 Screenshots
+# 📸 **Screenshot Gallery**
 
-Use your images in the repo like:
+Click images for full view:
 
-```markdown
-![Homepage](src/main/webapp/mainindex.jpg)
-![Event Page](src/main/webapp/shaktifest.jpg)
-![Team](src/main/webapp/team.jpg)
-```
-
-If you want, I can auto-generate a **full screenshot gallery section**.
+<p align="center">
+  <a href="src/main/webapp/mainindex.jpg"><img src="src/main/webapp/mainindex.jpg" width="150px" /></a>
+  <a href="src/main/webapp/shaktifest.jpg"><img src="src/main/webapp/shaktifest.jpg" width="150px" /></a>
+  <a href="src/main/webapp/team.jpg"><img src="src/main/webapp/team.jpg" width="150px" /></a>
+</p>
 
 ---
 
-## 🌟 Future Enhancements
+# 🌟 **Future Enhancements**
 
-* 🔁 Spring Boot MVC migration
-* 📈 Admin dashboard with analytics
-* 💳 Online payment system
+* 🔁 Migration to Spring Boot MVC
+* 📊 Admin dashboard with analytics
+* 💳 Online payment integration
 * ✉ Email notifications
 * 🔐 Token-based authentication
 * 📱 Mobile app version
 
 ---
 
-## 👩‍💻 Developed By
+# 👩‍💻 **Developed By**
 
-### **Akanksha Sawant**
+**Akanksha Sawant**
 
+---
+
+# 🔗 **License**
+
+This project is **for learning and personal use only**.
+
+All design, content, and code are © **Akanksha Sawant – All Rights Reserved**.
+
+❗ Copying, redistributing, or reusing without explicit permission is prohibited.
+
+---
+
+If you want, I can also **add animated badges, GIF demo links, and a fully formatted dual-language section**, just like your Mahabharata Darshan README, to make it more visually appealing for GitHub.
+
+Do you want me to do that next?

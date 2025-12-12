@@ -1,55 +1,60 @@
-[ PLANORA ] Event Management & Booking Web Application 
 
-This project is a complete JSP + Servlet + JDBC based Event Management System that allows users to view upcoming events, register, log in, book events, and manage their bookings.
-Administrators can manage events, users, and booking data through the backend.
 
-It is designed as a full-stack Java web application using JSP, Servlets, JDBC, MySQL, and Tomcat.
+# 🎉 PLANORA – Event Management & Booking Web Application
 
-📌 Features
-👤 User Module
+PLANORA is a full-stack **JSP + Servlet + JDBC** powered event management platform that enables users to explore upcoming events, register, log in, book events, and manage their bookings.
+A seamless administrative backend allows event organizers to manage events, users, and bookings efficiently.
 
-User Registration & Login
+Crafted to deliver a **smooth, modern event experience**, PLANORA blends dynamic UI, reliable backend logic, and database-driven workflows.
 
-View Upcoming Events
+---
 
-Book Events
+## 🚀 Core Features
 
-Check My Bookings
+### 👤 **User Module**
 
-Logout functionality
+* 🔐 User Registration & Login
+* 📅 Browse & View Upcoming Events
+* 📝 Book Events with a single click
+* 📄 View & manage *My Bookings*
+* 🚪 Secure Logout Functionality
 
-🛠 Admin Module
+---
 
-Manage events
+### 🛠 **Admin Module**
 
-Manage users
+* 🗂 Create & Manage Events
+* 👥 Manage User Accounts
+* 📊 View & track all Bookings
+* ✏ CRUD operations for event details
+* 🧾 Backend management via JSP/Servlets
 
-View all bookings
+---
 
-CRUD operations for event details
+### 🎨 **Frontend Experience**
 
-🎨 Frontend
+* 🌐 JSP-driven dynamic pages
+* 🎴 Event Cards, Banners & Visual Listings
+* 📱 Responsive UI
+* 🎨 Styled using HTML5, CSS3, JavaScript
+* 🔔 User-friendly booking flow
 
-JSP Pages
+---
 
-HTML, CSS, JS
+### 💾 **Backend & Logic**
 
-Responsive UI
+* ⚙ Java Servlets
+* 🔌 JDBC Connectivity
+* 🗄 MySQL Database Integration
+* 📚 DAO-style data flow
+* 🧱 Deployed on Apache Tomcat
 
-Event cards, banners, and images
+---
 
-💾 Backend
+## 📁 Project Structure
 
-Servlets for handling requests
-
-JDBC connectivity
-
-MySQL database integration
-
-DAO pattern-like structure for data handling
-
-📁 Project Structure
-ABC/
+```
+PLANORA/
 │
 ├── src/main/java/com/portal
 │   ├── dao/
@@ -77,99 +82,115 @@ ABC/
 │
 ├── build/
 └── .project / .classpath / .settings
+```
 
-🛠 Tech Stack
-Backend
+---
 
-Java
+## ⚙️ Tech Stack
 
-JSP & Servlets
+### 🔧 Backend
 
-JDBC
+* Java
+* JSP & Servlets
+* JDBC
+* MySQL
 
-MySQL
+### 🎨 Frontend
 
-Frontend
+* JSP
+* HTML5
+* CSS3
+* JavaScript
 
-JSP
+### 🌍 Server
 
-HTML5
+* Apache Tomcat (8 / 9 / 10)
 
-CSS3
+### 🗄 Database
 
-JavaScript
+* MySQL
+* JDBC Driver (included in `WEB-INF/lib`)
 
-Server
+---
 
-Apache Tomcat (recommended version 8/9/10)
+## 🔧 How to Run the Project
 
-Database
+### **1️⃣ Import the Project**
 
-MySQL
+* Open **Eclipse** or **IntelliJ**
+* Import as *Existing Dynamic Web Project* or *Maven Project* (if converted)
 
-JDBC Driver (included in WEB-INF/lib)
+---
 
-🔧 How to Run the Project
-1. Import the Project
+### **2️⃣ Configure the Server**
 
-Open Eclipse or IntelliJ
+* Add **Apache Tomcat** (8–10 recommended)
 
-Import as Existing Dynamic Web Project or Maven Project (if converted)
+---
 
-2. Configure Server
+### **3️⃣ Configure the Database**
 
-Add Apache Tomcat (8–10)
+Run in MySQL:
 
-3. Configure Database
-
-Create MySQL database:
-
+```sql
 CREATE DATABASE event_portal;
 USE event_portal;
+```
 
+Add the required tables:
+(If you want, I’ll generate full SQL schema for you.)
 
-Add required tables (users, events, bookings).
-If you want, I can generate full SQL schema for you.
+---
 
-4. Update DB Credentials
+### **4️⃣ Update DB Credentials**
 
-Inside your servlet/DAO files, update:
+Inside your DAO/Servlet files:
 
+```java
 url = "jdbc:mysql://localhost:3306/event_portal";
 username = "root";
 password = "your_password";
+```
 
-5. Run
+---
 
-Start Tomcat
+### **5️⃣ Run the Application**
 
-Open browser:
+* Start Tomcat
+* Open your browser:
 
-http://localhost:8080/ABC/
+```
+http://localhost:8080/PLANORA/
+```
 
-📸 Screenshots
+---
 
-You can include these (from webapp images):
+## 📸 Screenshots
 
+Use your images in the repo like:
+
+```markdown
 ![Homepage](src/main/webapp/mainindex.jpg)
 ![Event Page](src/main/webapp/shaktifest.jpg)
 ![Team](src/main/webapp/team.jpg)
+```
 
+If you want, I can auto-generate a **full screenshot gallery section**.
 
-If you want, I can generate a full gallery section for all images.
+---
 
-📌 Future Enhancements
+## 🌟 Future Enhancements
 
-Convert to Spring Boot MVC
+* 🔁 Spring Boot MVC migration
+* 📈 Admin dashboard with analytics
+* 💳 Online payment system
+* ✉ Email notifications
+* 🔐 Token-based authentication
+* 📱 Mobile app version
 
-Admin dashboard with charts
+---
 
-Online payment integration
+## 👩‍💻 Developed By
 
-Email notifications for bookings
+### **Akanksha Sawant**
 
-Token-based user authentication
-
-👩‍💻 Developed By
-
-Akanksha Sawant

@@ -213,17 +213,7 @@ http://localhost:8080/PLANORA/
 
 ---
 
-# 📸 **Screenshot Gallery**
 
-Click images for full view:
-
-<p align="center">
-  <a href="src/main/webapp/mainindex.jpg"><img src="src/main/webapp/mainindex.jpg" width="150px" /></a>
-  <a href="src/main/webapp/shaktifest.jpg"><img src="src/main/webapp/shaktifest.jpg" width="150px" /></a>
-  <a href="src/main/webapp/team.jpg"><img src="src/main/webapp/team.jpg" width="150px" /></a>
-</p>
-
----
 
 # 🌟 **Future Enhancements**
 
